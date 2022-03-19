@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv='content-language' content='en-us'>
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="Authentication Design Patterns, This article will attempt to break down some of the common Authentication patterns we come across on a regular basis.">
+
+<meta name="robots" content="index,follow">
+<meta name="googlebot" content="index,follow">
+
+    
+<title>85 Unique Authentication design patterns with Simple Decor | Home Design Ideas</title>
+<meta name="url" content="https://designhomes.github.io/home-design/authentication-design-patterns/" />
+<meta property="og:url" content="https://designhomes.github.io/home-design/authentication-design-patterns/">
+<meta property="article:author" content="Andreas"> 
+<meta name="author" content="Andreas">
+<meta name="geo.region" content="US">
+<meta name="geo.region" content="GB">
+<meta name="geo.region" content="CA">
+<meta name="geo.region" content="AU">
+<meta name="geo.region" content="IT">
+<meta name="geo.region" content="NL">
+<meta name="geo.region" content="DE">
+<link rel="canonical" href="https://designhomes.github.io/home-design/authentication-design-patterns/">
+<link rel="preconnect" href="https://stackpath.bootstrapcdn.com">
+<link rel="dns-prefetch" href="https://stackpath.bootstrapcdn.com">
+<link rel="preconnect" href="https://code.jquery.com">
+<link rel="dns-prefetch" href="https://code.jquery.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="dns-prefetch" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://designhomes.github.io/assets/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Lora:400,400i,700">
+<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet">
+<link rel="stylesheet" href="https://designhomes.github.io/assets/css/main.css">
+<link rel="stylesheet" href="https://designhomes.github.io/assets/css/theme.css">
+<link rel="icon" type="image/png" href="/logo.png">
+<link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="/favicon.ico">
+<link rel="shortcut icon" href="/favicon.ico">
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "articleSection": "post",
+    "name": "85 Unique Authentication design patterns with Simple Decor",
+    "headline": "85 Unique Authentication design patterns with Simple Decor",
+    "alternativeHeadline": "",
+    "description": "Design pattern will focus on the direct external user authentication process. This Design Enterprise Pattern is intended to outline enterprise guidelines for authenticating users via a standardized enterprise approach and authentication service that complies with established VA security. Authentication design patterns.",
+    "inLanguage": "en-us",
+    "isFamilyFriendly": "true",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https:\/\/designhomes.github.io\/home-design\/authentication-design-patterns\/"
+    },
+    "author" : {
+        "@type": "Person",
+        "name": "Andreas"
+    },
+    "creator" : {
+        "@type": "Person",
+        "name": "Andreas"
+    },
+    "accountablePerson" : {
+        "@type": "Person",
+        "name": "Andreas"
+    },
+    "copyrightHolder" : "Home Design Ideas",
+    "copyrightYear" : "2021",
+    "dateCreated": "2021-12-11T18:04:37.00Z",
+    "datePublished": "2021-12-11T18:04:37.00Z",
+    "dateModified": "2021-12-11T18:04:37.00Z",
+    "publisher":{
+        "@type":"Organization",
+        "name": "Home Design Ideas",
+        "url": "https://designhomes.github.io/home-design/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https:\/\/designhomes.github.io\/logo.png",
+            "width":"32",
+            "height":"32"
+        }
+    },
+    "image": "https://designhomes.github.io/logo.png",
+    "url" : "https:\/\/designhomes.github.io\/home-design\/authentication-design-patterns\/",
+    "wordCount" : "1315",
+    "genre" : [ "living room" ],
+    "keywords" : [ "Authentication" , "design" , "patterns" ]
+}
+</script>
+
+</head>
+  <body>    
+    <nav id="MagicMenu" class="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="https://designhomes.github.io/home-design/"><span style="text-transform: capitalize;font-weight: bold;">Home Design Ideas</strong></a><button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="navbar-collapse collapse" id="navbarColor02" style="">
+            <ul class="navbar-nav mr-auto d-flex align-items-center">
+               
+               <li class="nav-item"><a class="nav-link" href="https://designhomes.github.io/contact/">Contact</a></li>
+               <li class="nav-item"><a class="nav-link" href="https://designhomes.github.io/dmca/">Dmca</a></li>
+               <li class="nav-item"><a class="nav-link" href="https://designhomes.github.io/privacy-policy/">Privacy Policy</a></li>
+               <li class="nav-item"><a class="nav-link" href="https://designhomes.github.io/about/">About</a></li><li class="nav-item"><a class="nav-link" style="text-transform: capitalize;" href="https://designhomes.github.io/home-design/categories/home-design-ideas/" title="Home Design Ideas">Home Design Ideas</a></li></ul>
+        </div>
+    </div>
+    </nav>
+    <main role="main" class="site-content">
+<div class="container">
+<div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative">
+        <div class="h-100 tofront">
+            <div class="row justify-content-between ">
+                <div class=" col-md-6 pr-0 pr-md-4 pt-4 pb-4 align-self-center">
+                    <p class="text-uppercase font-weight-bold"><span class="catlist"><a class="sscroll text-danger" href="https://designhomes.github.io/home-design/categories/home-design-ideas"/>Home Design Ideas</a> . </span></p>
+                    <h1 class="display-4 mb-4 article-headline">85 Unique Authentication design patterns with Simple Decor</h1>
+                    <div class="d-flex align-items-center">
+                        <small class="ml-3">Written by Andreas <span class="text-muted d-block mt-1">Dec 11, 2021 · <span class="reading-time">7 min read</span></span></small>
+                    </div>
+                </div>
+                <div class="col-md-6 pr-0 align-self-center">
+                    <img class="rounded" src="https://i.pinimg.com/474x/c8/88/3a/c8883adfc7bdfa73b218482720e57f91--multi-factor-authentication-ui-patterns.jpg" onerror="this.onerror=null;this.src='https:\/\/designhomes.github.io\/img\/placeholder.svg';" alt="85 Unique Authentication design patterns with Simple Decor"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-lg pt-4 pb-4">
+    <div class="row justify-content-center">
+        <div class="col-md-12 col-lg-8">
+            <article class="article-post">
+            <p>Design pattern will focus on the direct external user authentication process. This Design Enterprise Pattern is intended to outline enterprise guidelines for authenticating users via a standardized enterprise approach and authentication service that complies with established VA security. Authentication design patterns.</p><center>
+	
+</center> <!-- Head tag Code -->
+<p><strong>Authentication Design Patterns</strong>, This article will attempt to break down some of the common Authentication patterns we come across on a regular basis. They are solutions to software design problems that you can find in a real-world application. The three most widely used and trusted API security design patterns are. Authentication as a Filter The first school of thought is to push all requests through a centralized login system only allowing endpoints to respond after the authentication system verifies the session and proxies the request.</p>
+<p><img loading="lazy" width="100%" src="https://designhomes.github.io/img/placeholder.svg" data-src="https://i.pinimg.com/originals/71/fb/ca/71fbca38d30b685bc753f943f081889e.jpg" alt="Design Patterns State Pattern Pattern Design State Pattern Software Architecture Diagram" title="Design Patterns State Pattern Pattern Design State Pattern Software Architecture Diagram" onerror="this.onerror=null;this.src='https:\/\/designhomes.github.io\/img\/placeholder.svg';" class="center" />
+Design Patterns State Pattern Pattern Design State Pattern Software Architecture Diagram From pinterest.com</p>
+<p>These patterns were developed for official SOACP courses that encompass service-oriented architecture and service technology. This post will share some of my real-world review experiences and what software pattern is. This Design Enterprise Pattern is intended to outline enterprise guidelines for authenticating users via a standardized enterprise approach and authentication service that complies with established VA security. Only issue client secrets to confidential clients and store them like youd store any sensitive API keys.</p>
+<h3 id="oct-5-5-min-read">Oct 5 5 min read.</h3><p><strong>Read another article</strong>:<br>
+<span class="navi text-left"><a class="badge badge-danger" href="/address-home-chennai-chennai-tamil-nadu/">Address home chennai chennai tamil nadu</a></span>
+<span class="navi text-left"><a class="badge badge-danger" href="/address-for-homes/">Address for homes</a></span>
+<span class="navi text-left"><a class="badge badge-dark" href="/adele-live-from-her-home/">Adele live from her home</a></span>
+<span class="navi text-left"><a class="badge badge-info" href="/adjust-upper-back-at-home/">Adjust upper back at home</a></span>
+<span class="navi text-left"><a class="badge badge-success" href="/aditya-celebrity-homes-rent/">Aditya celebrity homes rent</a></span></p>
+<p>Backend Design Software Pattern For Authentication Authorization. This Design Pattern is intended to outline enterprise guidelines for authenticating these external users through the use of a standardized enterprise approach and authentication. Putting client secrets in a single-page app or mobile app. Finally we suggest concrete directions for future work on encouraging digital security behavior through security prompts. This post will share some of my real-world review experiences and what software pattern is.</p>
+<div class="d-block p-4">
+	<center>
+		 <script type="text/javascript">
+	atOptions = {
+		'key' : '044478bac56eb613662b93ef204db084',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.creativeformatsnetwork.com/044478bac56eb613662b93ef204db084/invoke.js"></scr' + 'ipt>');
+		</script>
+	</center>
+</div> 
+<p><img loading="lazy" width="100%" src="https://designhomes.github.io/img/placeholder.svg" data-src="https://i.pinimg.com/originals/da/6b/c0/da6bc0665872a90e5fe6a86742b5eea1.jpg" alt="Authentication Mobile Mockup App Design Sms Message" title="Authentication Mobile Mockup App Design Sms Message" onerror="this.onerror=null;this.src='https:\/\/designhomes.github.io\/img\/placeholder.svg';" class="center" />
+Source: pinterest.com</p>
+<p>Network Security Identity Access Management and Trust Assurance Patterns. Design Patterns are models of code that solve classic problems. The server must somehow be involved in authenticating the client and providing an API key. Only issue client secrets to confidential clients and store them like youd store any sensitive API keys. Authentication Mobile Mockup App Design Sms Message.</p>
+<p><img loading="lazy" width="100%" src="https://designhomes.github.io/img/placeholder.svg" data-src="https://i.pinimg.com/originals/9b/62/02/9b620265443d4eca2ea2148b7af30d19.png" alt="A Look At Rest Api Design Patterns Dzone Integration Pattern Design Design Design Rules" title="A Look At Rest Api Design Patterns Dzone Integration Pattern Design Design Design Rules" onerror="this.onerror=null;this.src='https:\/\/designhomes.github.io\/img\/placeholder.svg';" class="center" />
+Source: pinterest.com</p>
+<p>Set of best-practice design patterns for most effectively en-couraging protective behavior in the context of promoting 2FA adoption. These patterns were developed for official SOACP courses that encompass service-oriented architecture and service technology. For example if youre working on a cookbook API. When others refer to SSO its usually also about OIDC. A Look At Rest Api Design Patterns Dzone Integration Pattern Design Design Design Rules.</p>
+<p><img loading="lazy" width="100%" src="https://designhomes.github.io/img/placeholder.svg" data-src="https://i.pinimg.com/originals/6f/6b/c7/6f6bc794579518c35ac5654e4eaa04cd.png" alt="Pin On Ux" title="Pin On Ux" onerror="this.onerror=null;this.src='https:\/\/designhomes.github.io\/img\/placeholder.svg';" class="center" />
+Source: pinterest.com</p>
+<p>This article will attempt to break down some of the common Authentication patterns we come across on a regular basis. Veterans require varying levels of access to interact with VA services. Svelte App-Level Design Patterns Routing with Svelte to be written. Joseph Yoder and Jeffrey Barcalow 1 were one of the first to adapt this approach to information security. Pin On Ux.</p>
+<p><img loading="lazy" width="100%" src="https://designhomes.github.io/img/placeholder.svg" data-src="https://i.pinimg.com/originals/4e/19/42/4e19426a72af633111591ab0ef9b013e.png" alt="Design Pattern For Federated Single Sign On Access Pattern Design Design Pattern" title="Design Pattern For Federated Single Sign On Access Pattern Design Design Pattern" onerror="this.onerror=null;this.src='https:\/\/designhomes.github.io\/img\/placeholder.svg';" class="center" />
+Source: pinterest.com</p>
+<p>Cloud Traffic Hijacking Protection. Only issue client secrets to confidential clients and store them like youd store any sensitive API keys. Svelte App-Level Design Patterns Routing with Svelte to be written. Oct 5 5 min read. Design Pattern For Federated Single Sign On Access Pattern Design Design Pattern.</p>
+<p><img loading="lazy" width="100%" src="https://designhomes.github.io/img/placeholder.svg" data-src="https://i.pinimg.com/originals/12/f8/2d/12f82d85537ebdf0ac93faa24916ebab.jpg" alt="Python Design Patterns Cheat Sheet By Sercand Http Www Cheatography Com Sercand Cheat Sheets Python Design Patterns Chea Cheat Sheets Pattern Design Python" title="Python Design Patterns Cheat Sheet By Sercand Http Www Cheatography Com Sercand Cheat Sheets Python Design Patterns Chea Cheat Sheets Pattern Design Python" onerror="this.onerror=null;this.src='https:\/\/designhomes.github.io\/img\/placeholder.svg';" class="center" />
+Source: pinterest.com</p>
+<p>To begin with when creating an authentication system there are two common designs from which to choose. This article is the second part of a multi-part series that discusses how to extend your identity management solution to Google Cloud to enable your corporate users to authenticate and consume services in a hybrid computing environment. Backend Design Software Pattern For Authentication Authorization. The three most widely used and trusted API security design patterns are. Python Design Patterns Cheat Sheet By Sercand Http Www Cheatography Com Sercand Cheat Sheets Python Design Patterns Chea Cheat Sheets Pattern Design Python.</p>
+<p><img loading="lazy" width="100%" src="https://designhomes.github.io/img/placeholder.svg" data-src="https://i.pinimg.com/originals/50/41/2b/50412b6339f5384efbe11ab9a03db989.png" alt="Pin On Dashboard Page" title="Pin On Dashboard Page" onerror="this.onerror=null;this.src='https:\/\/designhomes.github.io\/img\/placeholder.svg';" class="center" />
+Source: pinterest.com</p>
+<p>For consistency the title should include the words Log in rather than Sign in or another variant. This Design Enterprise Pattern is intended to outline enterprise guidelines for authenticating users via a standardized enterprise approach and authentication service that complies with established VA security. OAuth Open Authorization Authenticating and authorizing access to Application Programming Interfaces is possible using the OAuth Framework. Secure Connection for Scaled VMs. Pin On Dashboard Page.</p>
+<p><img loading="lazy" width="100%" src="https://designhomes.github.io/img/placeholder.svg" data-src="https://i.pinimg.com/originals/d4/09/1a/d4091a84bfd689eb8c73ec6fe67d0564.png" alt="Pin On Random Ui Ux Design Pattern Examples" title="Pin On Random Ui Ux Design Pattern Examples" onerror="this.onerror=null;this.src='https:\/\/designhomes.github.io\/img\/placeholder.svg';" class="center" />
+Source: pinterest.com</p>
+<p>For consistency the title should include the words Log in rather than Sign in or another variant. A map for an app. Backend Design Software Pattern For Authentication Authorization. Set of best-practice design patterns for most effectively en-couraging protective behavior in the context of promoting 2FA adoption. Pin On Random Ui Ux Design Pattern Examples.</p>
+<p><img loading="lazy" width="100%" src="https://designhomes.github.io/img/placeholder.svg" data-src="https://i.pinimg.com/originals/44/11/33/441133f7320a2d9e3a085111ca837046.png" alt="The Front Controller Design Pattern Is Used To Provide A Centralized Request Handling Mechanism So Tha Controller Design Design Patterns In Java Pattern Design" title="The Front Controller Design Pattern Is Used To Provide A Centralized Request Handling Mechanism So Tha Controller Design Design Patterns In Java Pattern Design" onerror="this.onerror=null;this.src='https:\/\/designhomes.github.io\/img\/placeholder.svg';" class="center" />
+Source: in.pinterest.com</p>
+<p>To begin with when creating an authentication system there are two common designs from which to choose. Some general concepts first. For consistency the title should include the words Log in rather than Sign in or another variant. These patterns were developed for official SOACP courses that encompass service-oriented architecture and service technology. The Front Controller Design Pattern Is Used To Provide A Centralized Request Handling Mechanism So Tha Controller Design Design Patterns In Java Pattern Design.</p>
+<p><img loading="lazy" width="100%" src="https://designhomes.github.io/img/placeholder.svg" data-src="https://i.pinimg.com/originals/11/61/a8/1161a8fed5baa63481339e2f213a96a1.jpg" alt="2 Step Authentication Illustration Graphic By Hengkil Creative Fabrica In 2021 Illustration Graphic Illustration Vector Free" title="2 Step Authentication Illustration Graphic By Hengkil Creative Fabrica In 2021 Illustration Graphic Illustration Vector Free" onerror="this.onerror=null;this.src='https:\/\/designhomes.github.io\/img\/placeholder.svg';" class="center" />
+Source: pinterest.com</p>
+<p>Patterns for authenticating corporate users in a hybrid environment. The three most widely used and trusted API security design patterns are. A Design Pattern is not a code that is ready to be used in your application but it is a model that you can use to solve a problem. These patterns were developed for official SOACP courses that encompass service-oriented architecture and service technology. 2 Step Authentication Illustration Graphic By Hengkil Creative Fabrica In 2021 Illustration Graphic Illustration Vector Free.</p>
+<p><img loading="lazy" width="100%" src="https://designhomes.github.io/img/placeholder.svg" data-src="https://i.pinimg.com/originals/a0/2a/68/a02a68b85411e9f2637854c2319dd651.gif" alt="Pin Authentication App Design Ux Mobile Interactive" title="Pin Authentication App Design Ux Mobile Interactive" onerror="this.onerror=null;this.src='https:\/\/designhomes.github.io\/img\/placeholder.svg';" class="center" />
+Source: pinterest.com</p>
+<p>The title can also include the product name if that makes sense for your situation. The three most widely used and trusted API security design patterns are. Design patterns are language neutral so they can be. Design Patterns are models of code that solve classic problems. Pin Authentication App Design Ux Mobile Interactive.</p>
+<p><img loading="lazy" width="100%" src="https://designhomes.github.io/img/placeholder.svg" data-src="https://i.pinimg.com/736x/ce/a2/2c/cea22c734824b8e8a218c76ef5bcaeed--the-two.jpg" alt="Angelist Two Factor Authentication Liked How They Boxed The Two Steps Coding Web Design Pattern Design" title="Angelist Two Factor Authentication Liked How They Boxed The Two Steps Coding Web Design Pattern Design" onerror="this.onerror=null;this.src='https:\/\/designhomes.github.io\/img\/placeholder.svg';" class="center" />
+Source: pinterest.com</p>
+<p>A typical design pattern with REST APIs is to build your endpoints around resources. They are solutions to software design problems that you can find in a real-world application. Some general concepts first. Only issue client secrets to confidential clients and store them like youd store any sensitive API keys. Angelist Two Factor Authentication Liked How They Boxed The Two Steps Coding Web Design Pattern Design.</p>
+<p><img loading="lazy" width="100%" src="https://designhomes.github.io/img/placeholder.svg" data-src="https://i.pinimg.com/originals/24/45/e1/2445e174f0c9198ede64b393f21499b4.png" alt="Mvc Design Pattern Journaldev Pattern Design Composition Pattern Design" title="Mvc Design Pattern Journaldev Pattern Design Composition Pattern Design" onerror="this.onerror=null;this.src='https:\/\/designhomes.github.io\/img\/placeholder.svg';" class="center" />
+Source: pinterest.com</p>
+<p>Veterans require varying levels of access to interact with VA services. These are the nouns to HTTP method verbs. Located at the top of the log in flow. A Design Pattern is not a code that is ready to be used in your application but it is a model that you can use to solve a problem. Mvc Design Pattern Journaldev Pattern Design Composition Pattern Design.</p>
+<p><img loading="lazy" width="100%" src="https://designhomes.github.io/img/placeholder.svg" data-src="https://i.pinimg.com/originals/c6/e2/dc/c6e2dccda396974101541116ba738111.png" alt="Jerry Hargrove Cloud Diagrams Notes Cloud Diagram Software Design Patterns Cloud Infrastructure" title="Jerry Hargrove Cloud Diagrams Notes Cloud Diagram Software Design Patterns Cloud Infrastructure" onerror="this.onerror=null;this.src='https:\/\/designhomes.github.io\/img\/placeholder.svg';" class="center" />
+Source: pinterest.com</p>
+<p>A typical design pattern with REST APIs is to build your endpoints around resources. These are the nouns to HTTP method verbs. When others refer to SSO its usually also about OIDC. Note that this site is. Jerry Hargrove Cloud Diagrams Notes Cloud Diagram Software Design Patterns Cloud Infrastructure.</p>
+<p><img loading="lazy" width="100%" src="https://designhomes.github.io/img/placeholder.svg" data-src="https://i.pinimg.com/originals/c6/ef/98/c6ef98f64de84a1f4194bc9b2a019aa3.gif" alt="Oauth Flow For Client Apps Information Engineering Database Design Program Design" title="Oauth Flow For Client Apps Information Engineering Database Design Program Design" onerror="this.onerror=null;this.src='https:\/\/designhomes.github.io\/img\/placeholder.svg';" class="center" />
+Source: pinterest.com</p>
+<p>Your API design will be much easier to understand if these names are descriptive. A Design Pattern is not a code that is ready to be used in your application but it is a model that you can use to solve a problem. Some general concepts first. Located at the top of the log in flow. Oauth Flow For Client Apps Information Engineering Database Design Program Design.</p>
+<p><img loading="lazy" width="100%" src="https://designhomes.github.io/img/placeholder.svg" data-src="https://i.pinimg.com/474x/c8/88/3a/c8883adfc7bdfa73b218482720e57f91--multi-factor-authentication-ui-patterns.jpg" alt="Multi Factor Authentication For Office 365 Office Blogs Outlook Calendar Multi Factor Authentication Office 365 Admin" title="Multi Factor Authentication For Office 365 Office Blogs Outlook Calendar Multi Factor Authentication Office 365 Admin" onerror="this.onerror=null;this.src='https:\/\/designhomes.github.io\/img\/placeholder.svg';" class="center" />
+Source: pinterest.com</p>
+<p>This Design Enterprise Pattern is intended to outline enterprise guidelines for authenticating users via a standardized enterprise approach and authentication service that complies with established VA security. To begin with when creating an authentication system there are two common designs from which to choose. Here we attempt to build upon this list by introducing eight patterns. Oct 5 5 min read. Multi Factor Authentication For Office 365 Office Blogs Outlook Calendar Multi Factor Authentication Office 365 Admin.</p>
+
+<div class="d-block p-4">
+	<center>
+			<script type="text/javascript">
+	atOptions = {
+		'key' : '6c3cdc317b9fcc251e8da3bdd038a10a',
+		'format' : 'iframe',
+		'height' : 90,
+		'width' : 728,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.effectiveperformanceformat.com/6c3cdc317b9fcc251e8da3bdd038a10a/invoke.js"></scr' + 'ipt>');
+			</script>
+	</center>
+</div>
+
+            </article>
+            <div class="row"><div class="posts-image" style="width:50%;"><a style="margin:5px;" href="/home-design/best-big-house-design/">&laquo;&laquo;&nbsp;55 Simple Best big house design for Living room</a></div>
+    <div class="posts-image" style="width:50%"><a style="margin:5px;" href="/home-design/ahi-made-it-home/">95 Simple Ahi made it home for Simple Design&nbsp;&raquo;&raquo;</a></div></div>
+            
+            <div class="mb-4">
+                <span class="taglist"></span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+<div class="container pt-4 pb-4">
+    
+    <h5 class="font-weight-bold spanborder"><span>Related Article</span></h5>
+    <div class="row">
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/home-design/back-exercise-for-home/"><img height="80" src="/img/placeholder.svg" data-src="https://i.ytimg.com/vi/_z_k8p36Fek/maxresdefault.jpg" onerror="this.onerror=null;this.src='https:\/\/designhomes.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/home-design/back-exercise-for-home/">74 Simple Back exercise for home for Large Space</a>
+                        </h2>
+                        <small class="text-muted">Aug 20 . 6 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/home-design/aldi-easy-home-robotic-vacuum/"><img height="80" src="/img/placeholder.svg" data-src="https://i.pinimg.com/originals/3a/67/b3/3a67b3e038f3cdb59f30c734da7add1b.png" onerror="this.onerror=null;this.src='https:\/\/designhomes.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/home-design/aldi-easy-home-robotic-vacuum/">59 Creatice Aldi easy home robotic vacuum with Simple Decor</a>
+                        </h2>
+                        <small class="text-muted">May 03 . 7 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/home-design/axa-home-insurance-uk/"><img height="80" src="/img/placeholder.svg" data-src="https://www.watersidecreditunion.co.uk/Images1/banner.jpg" onerror="this.onerror=null;this.src='https:\/\/designhomes.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/home-design/axa-home-insurance-uk/">60 New Axa home insurance uk </a>
+                        </h2>
+                        <small class="text-muted">Jan 06 . 6 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/home-design/amber-valley-cvs-help-at-home/"><img height="80" src="/img/placeholder.svg" data-src="https://housingcare.org/downloads/organisations/logos/27523.png" onerror="this.onerror=null;this.src='https:\/\/designhomes.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/home-design/amber-valley-cvs-help-at-home/">36 Modern Amber valley cvs help at home for Living room</a>
+                        </h2>
+                        <small class="text-muted">Sep 08 . 7 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/home-design/custom-logo-design-usa/"><img height="80" src="/img/placeholder.svg" data-src="https://i.pinimg.com/originals/0b/4b/51/0b4b5175425ee457053dcedd9c91014b.png" onerror="this.onerror=null;this.src='https:\/\/designhomes.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/home-design/custom-logo-design-usa/">45  Custom logo design usa for Small Space</a>
+                        </h2>
+                        <small class="text-muted">Feb 23 . 7 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/home-design/attic-stairs-home-depot-canada/"><img height="80" src="/img/placeholder.svg" data-src="https://i.pinimg.com/474x/cb/54/c1/cb54c1f83611b4f417cfd001178cf886.jpg" onerror="this.onerror=null;this.src='https:\/\/designhomes.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/home-design/attic-stairs-home-depot-canada/">86 Creatice Attic stairs home depot canada for Large Space</a>
+                        </h2>
+                        <small class="text-muted">Nov 28 . 6 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/home-design/abc-design-turbo-4-2015/"><img height="80" src="/img/placeholder.svg" data-src="https://i.pinimg.com/originals/7e/00/30/7e0030ec27c6917d102eb2b36f06c1f5.jpg" onerror="this.onerror=null;this.src='https:\/\/designhomes.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/home-design/abc-design-turbo-4-2015/">93 Simple Abc design turbo 4 2015 for Small Space</a>
+                        </h2>
+                        <small class="text-muted">Jan 29 . 6 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/home-design/amica-home-inspection/"><img height="80" src="/img/placeholder.svg" data-src="https://cdn.vox-cdn.com/thumbor/xngGyNWJkHtx9IMwMXCpVMzOq8o=/0x392:3194x2064/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/21925392/iStock_117640320.jpg" onerror="this.onerror=null;this.src='https:\/\/designhomes.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/home-design/amica-home-inspection/">49 Simple Amica home inspection with Simple Decor</a>
+                        </h2>
+                        <small class="text-muted">Nov 20 . 7 min read</small>
+                    </div>
+                </div>
+        </div>
+</div>
+</div>
+</div>
+    </main>    <script async="async" src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script async="async" src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script async="async" src="https://designhomes.github.io/assets/js/theme.js"></script>
+    <script>function init(){var imgDefer=document.getElementsByTagName('img');for (var i=0; i<imgDefer.length; i++){if(imgDefer[i].getAttribute('data-src')){imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));}}}window.onload=init;</script>
+    
+    <footer class="bg-white border-top p-3 text-muted small">
+        <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div><span style="text-transform: capitalize;"><a href="https://designhomes.github.io/home-design/">Home Design Ideas</a> Copyright &copy; 2022.</span></div>
+            
+        </div>
+        </div>
+    </footer>
+
+
+<script type="text/javascript">
+var sc_project=12673169; 
+var sc_invisible=1; 
+var sc_security="7426f851"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/12673169/0/7426f851/1/"
+alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+
+ 
+  </body>
+</html>
